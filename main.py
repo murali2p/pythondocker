@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/")
 def testing():
-    return "Welcome to docker"
+    return "Welcome to docker! Keep Up :)"
 
 
 if __name__ == "__main__":
