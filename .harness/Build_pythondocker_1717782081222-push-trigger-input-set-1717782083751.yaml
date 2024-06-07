@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_pythondocker_1717782081222-push-trigger-input-set
+  identifier: Build_pythondocker_1717782081222pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: testing_harness
+  pipeline:
+    identifier: Build_pythondocker_1717782081222
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
