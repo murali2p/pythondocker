@@ -19,6 +19,15 @@ pipeline:
                   spec:
                     shell: Sh
                     command: echo "Welcome to Harness CI"
+              - step:
+                  type: BuildAndPushDockerRegistry
+                  name: BuildAndPushDockerRegistry_1
+                  identifier: BuildAndPushDockerRegistry_1
+                  spec:
+                    connectorRef: dockersecret
+                    repo: murali2p/testingrepo
+                    tags:
+                      - latest
           platform:
             os: Windows
             arch: Amd64
