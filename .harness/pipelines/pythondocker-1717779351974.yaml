@@ -29,7 +29,7 @@ pipeline:
                     tags:
                       - latest
           platform:
-            os: Windows
+            os: Linux
             arch: Amd64
           runtime:
             type: Docker
