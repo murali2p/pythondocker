@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_pythondocker_1717779362132-pr-trigger-input-set
+  identifier: Build_pythondocker_1717779362132prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: testing_harness
+  pipeline:
+    identifier: Build_pythondocker_1717779362132
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
