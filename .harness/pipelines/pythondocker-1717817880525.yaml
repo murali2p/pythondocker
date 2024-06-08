@@ -51,11 +51,13 @@ pipeline:
                   timeout: ""
                   type: BuildAndPushDockerRegistry
           platform:
+            os: Linux
             arch: Amd64
-            os: Windows
           runtime:
-            spec: {}
             type: Docker
+            spec: {}
         type: CI
+        delegateSelectors:
+          - docker-delegate
   delegateSelectors:
     - docker-delegate
